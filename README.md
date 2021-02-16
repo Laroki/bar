@@ -1,0 +1,22 @@
+# bar
+
+J'ai un problème d'indentation avec mon environnement (VS code) c'est pour ça que les fichier twig sont mal indentés
+
+
+Question 4:
+
+```php
+public function findCatSpecial(int $id)
+    {
+        return $this->createQueryBuilder('c')
+            ->join('c.beers', 'b') // raisonner en terme de relation
+            ->where('b.id = :id')
+            ->setParameter('id', $id)
+            ->andWhere('c.term = :term')
+            ->setParameter('term', 'special')
+            ->getQuery()
+            ->getResult();
+    }
+```
+
+La méthode sert à récuperer les catégories 'special' d'une bière

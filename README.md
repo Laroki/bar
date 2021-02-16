@@ -19,4 +19,4 @@ public function findCatSpecial(int $id)
     }
 ```
 
-La méthode sert à récuperer les catégories 'special' d'une bière
+La méthode sert à récuperer les catégories 'special' d'une bière (l'id en paramètre correspond à l'id de la bière)

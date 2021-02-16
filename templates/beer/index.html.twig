@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Beer page
+{% endblock %}
+
+{% block body %}
+
+	<h3>Beer :
+		{{ beer.name }}</h3>
+	<p>description :
+		{{ beer.description }}</p>
+	<p>price :
+		{{ beer.price }}</p>
+	<p>degree :
+		{{ beer.degree }}</p>
+
+	<p>Country :
+		{% if beer.country and beer.country.id %}
+			{{ beer.country.name }}
+		</p>
+	{% endif %}
+	<p>Category :</p>
+	<ul>
+		{% for c in beer.categories %}
+			<li>{{ c.name }}
+				-
+				{{ c.term }}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

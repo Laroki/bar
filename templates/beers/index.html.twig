@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ title }}
+{% endblock %}
+
+{% block body %}
+	<div class="row">
+		{% for beer in beers %}
+			<div class="col-sm-6">
+				<div class="card card__beers">
+					<div class="card-body">
+						<h5 class="card-title">
+							<a href="{{ path('beer', { 'id' : beer.id }) }}">{{ beer.name }}</a>
+						</h5>
+						<p>Price :
+							{{ beer.price ?? 'aucune information' }}
+						</p>
+						<p>Degree :
+							{{ beer.degree }}
+						</p>
+						<p>{{ beer.description }}</p>
+						<p>
+							<small>Date d'invention :
+								{{ beer.publishedAt | date('d/m/Y h:i:s') }}
+							</small>
+						</p>
+						<img src="{{ asset('build/images/beer_00.jpg') }}"/>
+						{% if beer.country  %}
+							<p>
+								Country :
+								{{ beer.country.name}}
+							</p>
+						{% else %}
+							<p>No country</p>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

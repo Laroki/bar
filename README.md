@@ -3,7 +3,7 @@
 J'ai un problème d'indentation avec mon environnement (VS code) c'est pour ça que les fichier twig sont mal indentés
 
 Groupe 16:
-Sarah Güngör. 
+Sarah Güngör. <br/>
 Léa Boutilié. 
 Lucas Benhayoun. 
 Hélène Margary. 

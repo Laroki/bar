@@ -3,13 +3,13 @@
 J'ai un problème d'indentation avec mon environnement (VS code) c'est pour ça que les fichier twig sont mal indentés
 
 Groupe 16:
-Sarah Güngör
-Léa Boutilié
-Lucas Benhayoun
-Hélène Margary
-Félix Robaglia
-Rémi Cakir
-Xavier Mediavilla Diez
+Sarah Güngör. 
+Léa Boutilié. 
+Lucas Benhayoun. 
+Hélène Margary. 
+Félix Robaglia. 
+Rémi Cakir. 
+Xavier Mediavilla Diez.
 
 Question 4:
 
